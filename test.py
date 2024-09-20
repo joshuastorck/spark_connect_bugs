@@ -57,13 +57,6 @@ if __name__ == "__main__":
         type=int,
         help="Port for connect server to bind to, defaults to %(default)s",
     )
-    parser.add_argument(
-        "-d",
-        "--data-directory",
-        default=str((pathlib.Path(__file__).parent / "data").absolute()),
-        type=pathlib.Path,
-        help="Path to data directory, defaults to %(default)s",
-    )
     arguments = parser.parse_args()
 
     with connect_server(arguments.spark_home, arguments.port) as spark:
