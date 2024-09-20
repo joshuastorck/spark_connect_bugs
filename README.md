@@ -5,10 +5,9 @@ This is a simple test case that demonstrates how `withColumnRenamed` does not wo
 
 ## Requirements
 
-Poetry 1.8.3
-Python 3.10
-
-JAVA_HOME must be in the environment or the `java` binary must be available on the path
+* Poetry 1.8.3
+* Python 3.10
+* JAVA_HOME must be in the environment or the `java` binary must be available on the path
 
 ## Steps to reproduce
 
