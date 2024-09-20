@@ -1,0 +1,25 @@
+[tool.poetry]
+name = "spark-connect-bugs"
+version = "0.1.0"
+description = ""
+authors = ["Joshua Storck <joshua.storck@opendoor.com>"]
+readme = "README.md"
+package-mode = false
+
+[tool.poetry.dependencies]
+python = "^3.10"
+pandas = "^2.2.2"
+pyarrow = "^17.0.0"
+grpcio = "1.64.1"
+protobuf = "4.25.3"
+grpcio-status = "1.62.3"
+googleapis-common-protos = "1.63.2"
+pyspark = "3.5.0"
+
+
+[tool.poetry.group.dev.dependencies]
+black = "^24.8.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
