@@ -1,15 +1,11 @@
 import argparse
 import contextlib
-import datetime
 import os
 import pathlib
 import subprocess
 import tempfile
 
-import pandas as pd
 import pyspark.sql as ps
-import pyspark.sql.functions as F
-import pyspark.sql.types as T
 
 
 @contextlib.contextmanager
@@ -27,8 +23,6 @@ def connect_server(spark_home: pathlib.Path, port: int) -> None:
                 "org.apache.spark:spark-connect_2.12:3.5.2",
                 "--conf",
                 f"spark.connect.grpc.binding.port={port}",
-                "--conf",
-                "spark.sql.execution.pandas.inferPandasDictAsMap=true",
                 "--conf",
                 "spark.sql.pyspark.legacy.inferMapTypeFromFirstPair.enabled=true",
             ],
