@@ -2,7 +2,7 @@
 name = "spark-connect-bugs"
 version = "0.1.0"
 description = ""
-authors = ["Joshua Storck <joshua.storck@opendoor.com>"]
+authors = ["Joshua Storck <joshuastorck@gmail.com>"]
 readme = "README.md"
 package-mode = false
 
